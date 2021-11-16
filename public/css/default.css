@@ -6,6 +6,13 @@
     padding: 0;
 }
 
+body{
+	background:url('../images/dj-booth.jpeg');
+	background-repeat: no-repeat;
+	background-size: cover;	
+	color:seashell;
+}
+
 .wrapper {
 	display: flex;
     text-align: center;
