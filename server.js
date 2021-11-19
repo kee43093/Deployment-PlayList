@@ -74,7 +74,8 @@ app.get('/', (req, res)=> {
       style: 'default.css',
       playlists: responseArray
   })
-  }).catch(function (error) {
+  })
+  .catch(function (error) {
     console.error(error);
   });
   
@@ -85,8 +86,11 @@ app.get('/', (req, res)=> {
 
 
  
-//  app.get('/' , (req, res) => {
-//  })
+ app.get('/login' , (req, res) => {
+  res.render('login', {
+    style: 'login.css'
+})
+ })
 
 // app.get('/api/products', (req, res) => {
 //   console.log('hello world')
